@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 导航 · 发现最好用的 AI 工具</title>
+  <meta name="description" content="AI 导航收录全球最优质的 AI 工具，帮你快速找到合适的 AI 解决方案。覆盖聊天、绘画、编程、视频、音频等分类。">
+  <meta name="keywords" content="AI工具, AI导航, 人工智能工具, AI工具导航, ChatGPT, Midjourney, AI绘画">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/index.html">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+</head>
+<body>
+  <!-- Navbar (固定顶部) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">🤖 AI 导航</a>
+      <button class="navbar-toggle" aria-label="切换菜单">☰</button>
+      <div class="navbar-links">
+        <a href="index.html" class="active">首页</a>
+        <a href="tools.html">全部工具</a>
+        <a href="#categories">分类</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero 区域 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">发现<br><span class="gradient-text">最好用的 AI 工具</span></h1>
+      <p class="hero-subtitle">收录全球最优质的 AI 工具，帮你找到合适的 AI 解决方案</p>
+      <div class="hero-search">
+        <input type="text" class="hero-search-input" placeholder="搜索 AI 工具..." id="hero-search">
+        <button class="btn btn-primary" onclick="location.href='tools.html?q='+encodeURIComponent(document.getElementById('hero-search').value)">搜索</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 统计数字区域 -->
+  <section class="section stats-section" data-render="stats">
+    <!-- JS 渲染：工具总数、分类数、收录来源数、月活跃用户数 -->
+  </section>
+
+  <!-- 分类区域 -->
+  <section id="categories" class="section">
+    <div class="section-header fade-in">
+      <h2 class="section-title"><span class="gradient-text">分类</span>浏览</h2>
+      <p class="section-desc">按类别发现最适合你的 AI 工具</p>
+    </div>
+    <div class="category-grid" data-render="categories">
+      <!-- JS 渲染：分类卡片（图标、名称、工具数量） -->
+    </div>
+  </section>
+
+  <!-- 推荐工具区域 -->
+  <section class="section section-dark">
+    <div class="section-header fade-in">
+      <h2 class="section-title"><span class="gradient-text">推荐</span>工具</h2>
+      <p class="section-desc">精选最受欢迎的 AI 工具</p>
+    </div>
+    <div class="tool-grid" data-render="featured">
+      <!-- JS 渲染：推荐工具卡片（Logo、名称、简介、定价标签、分类标签、评分星级） -->
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 AI 导航 · 发现最好用的 AI 工具</p>
+    </div>
+  </footer>
+
+  <!-- 加载遮罩 -->
+  <div class="loading-overlay" id="loading"><div class="loading-spinner"></div></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

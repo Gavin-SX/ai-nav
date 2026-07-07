@@ -1,0 +1,18 @@
+# Codegraph index
+.codegraph/
+
+# Serena config
+.serena/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
